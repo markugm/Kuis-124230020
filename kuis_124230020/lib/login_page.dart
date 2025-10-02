@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
 
   void _attemptLogin() {
     if (_formKey.currentState!.validate()) {
-      if (_usernameController.text == 'dinara' && _passwordController.text == '123') {
+      if (_usernameController.text == 'dinara' && _passwordController.text == '020') {
         // snackbar login berhasil floating
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -70,13 +70,13 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Icon(
-                  Icons.directions_car_filled, 
+                  Icons.library_books, 
                   size: 100, 
                   color: primaryColor, 
                 ),
                 const SizedBox(height: 10),
                 const Text(
-                  'Vehicle ShowApp',
+                  'Book Store',
                   style: TextStyle(
                     fontSize: 24, 
                     fontWeight: FontWeight.bold,
